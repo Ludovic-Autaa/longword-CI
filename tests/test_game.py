@@ -16,13 +16,13 @@ class TestGame(unittest.TestCase):
         new_game = Game()
         new_game.grid = list("ABORIGENE")
 
-        self.assertEqual(new_game.is_word_valid("ABORIGENE"), True)
+        self.assertEqual(new_game.is_valid("ABORIGENE"), True)
 
     def test_game_is_word_invalid(self):
         new_game = Game()
         new_game.grid = list ("LOCALITES")
 
-        self.assertEqual(new_game.is_word_valid("VILLAGES"), False)
+        self.assertEqual(new_game.is_valid("VILLAGES"), False)
 
     def test_unknown_word_is_invalid(self):
       new_game = Game()

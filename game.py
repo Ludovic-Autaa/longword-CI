@@ -7,7 +7,7 @@ class Game:
         for _ in range (9):
             self.grid.append(random.choice(string.ascii_letters).upper())
 
-    def is_word_valid(self, word):
+    def is_valid(self, word):
 
         grid_copy = self.grid[:]
 
